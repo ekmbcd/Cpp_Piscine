@@ -1,6 +1,6 @@
-NAME     := phonebook
+NAME     := replace
 
-SRCS     := phonebook.cpp Contact.class.cpp
+SRCS     := main.cpp
 OBJS     := $(SRCS:.cpp=.o)
 
 CPP      := clang++

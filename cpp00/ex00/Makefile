@@ -3,7 +3,7 @@ NAME     := megaphone
 SRCS     := megaphone.cpp
 OBJS     := $(SRCS:.cpp=.o)
 
-CPP      := g++
+CPP      := clang++
 CPPFLAGS := -Wall -Werror -Wextra
 
 all: $(NAME)
