@@ -2,12 +2,12 @@
 
 int const Fixed::_point = 8;
 
-Fixed::Fixed() 
+Fixed::Fixed() : _value(0)
 {
 	std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed const & src) 
+Fixed::Fixed(Fixed const & src)
 {
 	std::cout << "Copy constructor called" << std::endl;
 	*this = src;
@@ -27,7 +27,7 @@ Fixed & Fixed::operator=(Fixed const & rhs)
 
 int		Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
+	// std::cout << "getRawBits member function called" << std::endl;
 	return (_value);
 }
 

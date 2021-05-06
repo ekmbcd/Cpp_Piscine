@@ -2,12 +2,12 @@
 
 int const Fixed::_point = 8;
 
-Fixed::Fixed() 
+Fixed::Fixed() : _value(0)
 {
 	// std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(Fixed const & src) 
+Fixed::Fixed(Fixed const & src)
 {
 	// std::cout << "Copy constructor called" << std::endl;
 	*this = src;
@@ -156,14 +156,14 @@ Fixed&	Fixed::min(Fixed &left, Fixed &right)
 {
 	if (left < right)
 		return (left);
-	return (right); 
+	return (right);
 }
 
 Fixed&	Fixed::max(Fixed &left, Fixed &right)
 {
 	if (left > right)
 		return (left);
-	return (right); 
+	return (right);
 }
 
 const Fixed&	Fixed::min(const Fixed &left, const Fixed &right)
