@@ -1,12 +1,12 @@
 #include "Brain.hpp"
 
-Brain::Brain(void) 
-{ 
-
+Brain::Brain(void)
+{
+	_iq = rand();
 }
 
-Brain::~Brain(void) 
-{ 
+Brain::~Brain(void)
+{
 
 }
 

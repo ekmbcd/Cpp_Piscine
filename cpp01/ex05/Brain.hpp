@@ -9,8 +9,8 @@ class Brain
 {
 
 private:
-	unsigned int iq;
-	
+	unsigned int _iq;
+
 public:
 	Brain();
 	~Brain();
