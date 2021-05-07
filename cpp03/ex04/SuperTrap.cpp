@@ -15,7 +15,7 @@ SuperTrap::SuperTrap()
 	std::cout << _name << " IS PERFECTION." << std::endl;
 }
 
-SuperTrap::SuperTrap(std::string name) 
+SuperTrap::SuperTrap(std::string name)
 {
 	_hp = 100;
 	_max_hp = 100;
