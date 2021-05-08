@@ -2,7 +2,6 @@
 #define ENEMY_HPP
 
 #include <iostream>
-#include <Enemy.hpp>
 
 class Enemy
 {

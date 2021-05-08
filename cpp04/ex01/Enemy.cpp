@@ -20,6 +20,7 @@ Enemy & Enemy::operator = (Enemy const & src)
 {
 	_type = src._type;
 	_hp = src._hp;
+	return (*this);
 }
 
 Enemy::Enemy(Enemy const & src)
@@ -27,3 +28,13 @@ Enemy::Enemy(Enemy const & src)
 	*this = src;
 }
 
+void Enemy::takeDamage(int dmg)
+{
+	if (dmg < 0)
+		return ;
+	if (dmg > _hp)
+		dmg = _hp;
+	_hp -= dmg;
+}
+
+Enemy::~Enemy() { }
