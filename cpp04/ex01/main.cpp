@@ -4,6 +4,7 @@
 #include "SuperMutant.hpp"
 #include "PlasmaRifle.hpp"
 #include "PowerFist.hpp"
+#include "OpSword.hpp"
 
 int main()
 {
@@ -28,14 +29,13 @@ int main()
 	std::cout << *me;
 
 	b = new SuperMutant();
-	me->equip(pf);
-	me->attack(b);
+	AWeapon * op = new OpSword();
+	me->equip(op);
 	me->attack(b);
 	me->attack(b);
 	me->recoverAP();
 	me->attack(b);
 
-	delete b;
 	delete me;
 	return 0;
 	}
