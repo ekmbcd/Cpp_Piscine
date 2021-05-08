@@ -37,5 +37,8 @@ int main()
 	me->attack(b);
 
 	delete me;
+	delete pr;
+	delete pf;
+	delete b;
 	return 0;
 	}
