@@ -60,7 +60,11 @@ void Character::attack(Enemy* enm)
 	_ap -= _weapon->getAPCost();
 	enm->takeDamage(_weapon->getDamage());
 	if (enm->getHP() == 0)
+	{
+		delete enm;
 		enm->~Enemy();
+	}
+		
 }
 
 std::ostream & operator<<(std::ostream & o, Character const & rhs)

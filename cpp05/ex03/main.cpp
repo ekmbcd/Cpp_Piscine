@@ -15,18 +15,25 @@ int	main(void)
 
 	john.signForm(*form);
 	john.executeForm(*form);
+	delete form;
 
 	form = intern.makeForm("robotomy request", "Mario");
 
 	john.signForm(*form);
 	john.executeForm(*form);
+	delete form;
+
 
 	form = intern.makeForm("presidential pardon", "Barabba");
 
 	john.signForm(*form);
 	john.executeForm(*form);
+	delete form;
+
 
 	form = intern.makeForm("wrong", "error");
+	delete form;
+
 
 	return (0);
 }

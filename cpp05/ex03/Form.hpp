@@ -47,7 +47,7 @@ public:
 	Form(std::string const & name, int sign, int exec);
 	Form(Form const & src);
 	Form & operator = (Form const & src);
-	~Form();
+	virtual ~Form();
 
 	std::string const & getName() const;
 	bool isSigned() const;

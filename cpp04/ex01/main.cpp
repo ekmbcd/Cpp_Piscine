@@ -1,3 +1,4 @@
+
 #include "AWeapon.hpp"
 #include "Character.hpp"
 #include "RadScorpion.hpp"
@@ -39,6 +40,6 @@ int main()
 	delete me;
 	delete pr;
 	delete pf;
-	delete b;
+	delete op;
 	return 0;
 	}
