@@ -17,8 +17,17 @@ void printInt(std::string input)
 	ss >> n;
 	checkChar(static_cast<char>(n));
 	std::cout << "int : " << n << std::endl;
-	std::cout << "float : " << static_cast<float>(n) << ".0f" << std::endl;
-	std::cout << "double : " << static_cast<double>(n) << ".0" << std::endl;
+	if (n < 1000000)
+	{
+		std::cout << "float : " << static_cast<float>(n) << ".0f" << std::endl;
+		std::cout << "double : " << static_cast<double>(n) << ".0" << std::endl;
+	}
+	else
+	{
+		std::cout << "float : " << static_cast<float>(n) << std::endl;
+		std::cout << "double : " << static_cast<double>(n) << std::endl;
+	}
+
 }
 
 void printChar(std::string input)
@@ -38,7 +47,10 @@ void printDouble(std::string input)
 	double d;
 	ss >> d;
 	checkChar(static_cast<char>(d));
-	std::cout << "int : " << static_cast<int>(d) << std::endl;
+	if (d > 2147483647 || d < -2147483648)
+		std::cout << "int: out of range" << std::endl;
+	else
+		std::cout << "int: " << static_cast<int>(d) << std::endl;
 	if (d == static_cast<int>(d))
 	{
 		std::cout << "float : " << static_cast<float>(d) << ".0f" << std::endl;
@@ -58,7 +70,10 @@ void printFloat(std::string input)
 	float f;
 	ss >> f;
 	checkChar(static_cast<char>(f));
-	std::cout << "int : " << static_cast<int>(f) << std::endl;
+	if (f > 2147483647 || f < -2147483648)
+		std::cout << "int: out of range" << std::endl;
+	else
+		std::cout << "int: " << static_cast<int>(f) << std::endl;
 	if (f == static_cast<int>(f))
 	{
 		std::cout << "float : " << f << ".0f" << std::endl;
