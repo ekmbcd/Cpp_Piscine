@@ -16,7 +16,7 @@ int main()
 
 	int		pos;
 
-	std::cout << "Vectors :" << std::endl << std::endl;
+	std::cout << "Vectors :" << std::endl;
 	try
 	{
 		pos = easyfind(vec, 4);
@@ -30,11 +30,11 @@ int main()
 	{
 		std::cout << "Exception : " << e.what() << std::endl;
 	}
-	std::cout << std::endl << "==================================" << std::endl << std::endl;
+	std::cout << std::endl;
 
 
 
-	std::cout << "Lists :" << std::endl << std::endl;
+	std::cout << "Lists :" << std::endl;
 	try
 	{
 		pos = easyfind(lst, 4);

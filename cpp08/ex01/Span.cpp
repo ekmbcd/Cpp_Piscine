@@ -30,7 +30,7 @@ void Span::addNumber(int n)
 
 int Span::shortestSpan() const
 {
-	if (_nums.size() < 3)
+	if (_nums.size() < 2)
 		throw NoSpanException();
 
 	std::vector<int> tmp(_nums);
@@ -49,6 +49,8 @@ int Span::shortestSpan() const
 
 int Span::longestSpan() const
 {
+	if (_nums.size() < 2)
+		throw NoSpanException();
 	return (*(std::max_element(_nums.begin(), _nums.end())) -
 	 *(std::min_element(_nums.begin(), _nums.end())));
 }

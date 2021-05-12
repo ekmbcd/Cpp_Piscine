@@ -7,6 +7,15 @@ int main()
 
 	try
 	{
+		sp1.longestSpan();
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+	
+	try
+	{
 		for (int i = 0; i < 10000; i++)
 		{
 			sp1.addNumber(i);
